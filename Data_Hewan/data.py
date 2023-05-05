@@ -14,11 +14,9 @@ daftar_pertanyaan= [
     "Apakah dia memiliki bulu lebat di sekitar kepala ?","Apakah dia memiliki bisa/racun","Apakah dia memiliki paruh ?",
     "Apakah dia memiliki kantung ?","Apakah dia memiliki delapan kaki ?","Apakah dia memiliki tanduk ?","Apakah dia hidup di perairan dingin ?",
     "Apakah dia hidup berkelompok ?","Apakah dia hidup di dua alam ?","Apakah dia memiliki tangan ?","Apakah dia termasuk primata ?",
-    "Apakah dia hewan yang menghasilkan susu ?"
+    "Apakah dia hewan yang menghasilkan susu ?","Apakah dia memiliki enam kaki ?","Apakah dia cantik ?"
 ]
 
-panjang = len(daftar_pertanyaan)
-print(panjang) 
 
 random.shuffle(daftar_pertanyaan)
 
@@ -74,7 +72,6 @@ daftar_hewan = {
         "hidup di darat",""
     ],
 
-    "Rusa":["ekor pendek", "telinga yang panjang", "mempunyai tanduk", "mempunyai 4 kaki", "hewan herbivora"],
     "Banteng":["mempunyai tanduk panjang melengkung ke atas", "berkaki empat", "memiliki bulu", "besar", "hewan herbivora"],
     "Kelinci":["cara jalan yang unik dengan melompat", "berkaki empat" ,"kecil" ,"memiliki bulu" ,"hewan mamalia"],
     "Beruang":["besar", "mempunyai cakar tajam", "memiliki bulu", "berkaki empat", "hewan karnivora"],
@@ -91,3 +88,8 @@ daftar_hewan = {
     "Cheetah":[]
 }
 
+# Tambah fitur untuk mengajarkan Ai
+# contoh: Di main awal bikin menu : Coba Ai, Ajari Ai
+# di menu ajari, tambah kan menu : masukkan nama hewan, kemudian masukkan ciri2 hewan 
+panjang = len(daftar_pertanyaan)
+print(panjang) 
