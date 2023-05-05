@@ -1,4 +1,4 @@
-probabilitas ={
+prob ={
     "Gajah": 0,
     "Kuda": 0,  
     "Kucing": 0,

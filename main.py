@@ -1,8 +1,7 @@
 import Data_Hewan as dh
-program = True
 validasi = []
 if __name__ == "__main__":
-    while program:
+    while dh.operasi.programs == True:
         pertanyaan = dh.operasi.pertanyaan_yang_diberikan()
         import os
         sistem_operasi = os.name
@@ -28,8 +27,8 @@ if __name__ == "__main__":
             case"1":
                 ganti = pertanyaan.replace(" ?","")
                 validasi.append(ganti[11:])
-        if len(validasi) == 7: #ganti jika 7 data yang ada didalam validasi cocok dengan data hewan yang anda, kemduian tampilkan hewan nya
-            break
+        # if len(validasi) == 47: #ganti jika 7 data yang ada didalam validasi cocok dengan data hewan yang anda, kemduian tampilkan hewan nya
+        #     break
 
         
 hasil = dh.operasi.identifikasi_hewan(validasi)

@@ -10,18 +10,22 @@ daftar_pertanyaan= [
     "Apakah dia memiliki kepala yang panjang ?","Apakah dia hidup di hutan ?","Apakah dia hidup di savana ?",
     "Apakah dia hewan yang terancam punah ?","Apakah dia memiliki gading ?","Apakah dia memiliki ekor ?",
     "Apakah dia bertubuh panjang ?", "Apakah dia memiliki sisik ?","Apakah dia tidak mempunyai kaki ?",
-    "Apakah dia bisa di tunggangi ?","Apakah dia bisa terbang ?","Apakah dia memiliki sayap ?","Apakah dia memiliki kulit yang keras",
+    "Apakah dia bisa di tunggangi ?","Apakah dia bisa terbang ?","Apakah dia memiliki sayap ?","Apakah dia memiliki kulit yang keras dan bersisik ?",
     "Apakah dia memiliki bulu lebat di sekitar kepala ?","Apakah dia memiliki bisa/racun","Apakah dia memiliki paruh ?",
-    "Apakah dia memiliki kantung ?","Apakah dia memiliki delapan kaki ?","Apakah dia memiliki tanduk ?","Apakah dia hidup di perairan dingin ?"
+    "Apakah dia memiliki kantung ?","Apakah dia memiliki delapan kaki ?","Apakah dia memiliki tanduk ?","Apakah dia hidup di perairan dingin ?",
+    "Apakah dia hidup berkelompok ?","Apakah dia hidup di dua alam ?","Apakah dia memiliki tangan ?","Apakah dia termasuk primata ?",
+    "Apakah dia hewan yang menghasilkan susu ?"
 ]
 
+panjang = len(daftar_pertanyaan)
+print(panjang) 
 
 random.shuffle(daftar_pertanyaan)
 
 
 daftar_hewan = {
     "Gajah": [
-        "hidup di daratan","mamalia","hewan mamalia","memiliki bulu","berkaki empat","berbadan besar","memiliki belalai",
+        "hidup di daratan","hewan mamalia","memiliki bulu","berkaki empat","berbadan besar","memiliki belalai",
         "melahirkan","hewan herbivora","mudah di latih","hidup di hutan","hidup di savana","hewan yang terancam punah",
         "memiliki gading","memiliki ekor","bisa ditunggangi"
     ],
@@ -39,21 +43,37 @@ daftar_hewan = {
 
     "Kanguru": [
         "hidup di daratan","hewan mamalia","memiliki bulu","berbadan besar","berkaki dua","melahirkan","hewan herbivora",
-        "hidup di savana","hidup di hutan","memiliki ekor","memiliki kantung"
+        "hidup di savana","hidup di hutan","memiliki ekor","memiliki kantung","memiliki tangan"
     ],
 
     "Sapi": [
         "hidup di daratan","hewan mamalia","berkaki empat","berbadan besar","hewan peliharaan","melahirkan","hewan herbivora",
-        "memiliki ekor","memiliki tanduk","memproduksi susu"
+        "memiliki ekor","memiliki tanduk","hewan yang menghasilkan susu"
     ],
 
     "Penguin":[
-        "hidup di dua "
+        "hidup di dua alam","kecil","berkaki dua","bertelur","hewan karnivora","hewan predator","memiliki ekor","memiliki paruh","hidup di perairan dingin","memiliki sayap"
     ],
-    "Ular":["bertubuh panjang", "memiliki sisik", "tidak mempunyai kaki", "hidup di daratan", "hewan karnivora"],
-    "Buaya":["memiliki moncong yang panjang", "berbadan panjang dilapisi sisik tanduk", "memiliki empat kaki", "hidup di dua alam", "hewan karnivora"],
-    "Monyet":["mempunyai ekor", "hidup dihutan", "memiliki bulu", "memiliki dua kaki dan dua tangan", "hewan omnivora"],
-    "Komodo":["mempunyai ekor", "warna kulit kuning kehitaman", "berkaki empat", "memiliki sisik", "hewan karnivora"],
+
+    "Ular":[
+        "hidup di lautan","hidup di daratan","hewan buas","bertelur","hewan karnivora","hewan predator","hidup di hutan","hidup di savana",
+        "memiliki ekor","bertubuh panjang","memiliki sisik","tidak mempunyai kaki","memiliki bisa/racun"
+    ],
+
+    "Buaya":[
+        "hidup di dua alam","hewan buas","memiliki taring","berkaki empat","cepat","berbadan besar","bertelur","hewan karnivora",
+        "hewan predator","bertubuh panjang","memiliki kulit yang keras dan bersisik"
+    ],
+
+    "Monyet":[
+        "hidup di daratan","hewan mamalia","memiliki bulu","kecil","berkaki dua","hewan peliharaan","melahirkan","hewan omnivora","mudah di latih",
+        "hidup di hutan","memiliki ekor","termasuk primata","memiliki tangan"
+    ],
+
+    "Komodo":[
+        "hidup di darat",""
+    ],
+
     "Rusa":["ekor pendek", "telinga yang panjang", "mempunyai tanduk", "mempunyai 4 kaki", "hewan herbivora"],
     "Banteng":["mempunyai tanduk panjang melengkung ke atas", "berkaki empat", "memiliki bulu", "besar", "hewan herbivora"],
     "Kelinci":["cara jalan yang unik dengan melompat", "berkaki empat" ,"kecil" ,"memiliki bulu" ,"hewan mamalia"],
