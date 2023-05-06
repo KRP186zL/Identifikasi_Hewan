@@ -1,7 +1,8 @@
 from. import data,probabilitas
+import time
 
 
-chance = probabilitas.prob
+chance = probabilitas.prob.copy()
 programs = True
 jumlah_pertanyaan = 0
 nomor = -1
@@ -10,12 +11,12 @@ copy_hewan  = data.daftar_hewan.copy()
 
 
 def pertanyaan_yang_diberikan():
-    global jumlah_pertanyaan,nomor,programs
+    global jumlah_pertanyaan,nomor,programs,copy_hewan
     jumlah_pertanyaan +=1
     if jumlah_pertanyaan <=51: #sebanyak jumlah pertanyaan
         nomor+=1
-    else:
-        programs = False
+        if jumlah_pertanyaan == 51:
+            programs = False
     return copy_pertanyaan[nomor] 
 
 
@@ -23,37 +24,48 @@ def menghitung_probabilitas():
     pass
 
 
+def loading_animation(duration):
+    start_time = time.time()
+    while time.time() - start_time < duration:
+        for i in range(4):
+            print("Sedang menebak" + "." * i)
+            time.sleep(0.5)
+            print("\033[F\033[K", end="")  # Menghapus baris sebelumnya
+        
+
+        
+
 def identifikasi_hewan(ciri_ciri):
-    print (ciri_ciri)
     if "hidup di lautan" in ciri_ciri:
-        chance["Penguin"]
-        chance["Ular"]
-        chance["Ikan"]
+        chance["Penguin"]+=10
+        chance["Ular"]+=10
+        chance["Ikan"]+=10
 
     if "hidup di daratan" in ciri_ciri:
-        chance["Gajah"]
-        chance["Kuda"]
-        chance["Kucing"]
-        chance["Kanguru"]
-        chance["Sapi"]
-        chance["Penguin"]
-        chance["Ular"]
-        chance["Buaya"]
-        chance["Monyet"]
-        chance["Komodo"]
-        chance["Banteng"]
-        chance["Kelinci"]
-        chance["Beruang"]
+        chance["Gajah"]+=10
+        chance["Kuda"]+=10
+        chance["Kucing"]+=10
+        chance["Kanguru"]+=10
+        chance["Sapi"]+=10
+        chance["Penguin"]+=10
+        chance["Ular"]+=10
+        chance["Buaya"]+=10
+        chance["Monyet"]+=10
+        chance["Komodo"]+=10
+        chance["Banteng"]+=10
+        chance["Kelinci"]+=10
+        chance["Beruang"]+=10
 
     if "hewan buas" in ciri_ciri:
-        chance["Ular"]
-        chance["Buaya"]
-        chance["Komodo"]
-        chance["Banteng"]
-        chance["Beruang"]
+        chance["Ular"]+=10
+        chance["Buaya"]+=10
+        chance["Komodo"]+=10
+        chance["Banteng"]+=10
+        chance["Beruang"]+=10
 
     if "hewan nokturnal" in ciri_ciri:
-        pass
+        chance["Ular"]+=10
+        chance["Ular"]
     if "hewan mamalia" in ciri_ciri:
         pass
     if "memiliki bulu" in ciri_ciri:
@@ -154,9 +166,12 @@ def identifikasi_hewan(ciri_ciri):
         pass
         chance["Gajah"]+=20
         chance["Kuda"]+=10
-        chance["Kucing"]+=100
+        chance["Kucing"]
         # return chance
     chance_terbesar = max(chance.values())
     result = [key for key, value in chance.items() if value == chance_terbesar]
-    return "".join(result)
+    final_result = "".join(result)
+    print("\n")
+    loading_animation(3)
+    return f"Hewan yang anda pikirkan adalah {final_result}"
     

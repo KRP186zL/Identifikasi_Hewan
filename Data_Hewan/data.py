@@ -14,7 +14,7 @@ daftar_pertanyaan= [
     "Apakah dia memiliki bulu lebat di sekitar kepala ?","Apakah dia memiliki bisa/racun","Apakah dia memiliki paruh ?",
     "Apakah dia memiliki kantung ?","Apakah dia memiliki delapan kaki ?","Apakah dia memiliki tanduk ?","Apakah dia hidup di perairan dingin ?",
     "Apakah dia hidup berkelompok ?","Apakah dia hidup di dua alam ?","Apakah dia memiliki tangan ?","Apakah dia termasuk primata ?",
-    "Apakah dia bisa diminum susunya ? ?","Apakah dia memiliki enam kaki ?","Apakah dia cantik ?"
+    "Apakah dia bisa diminum susunya ? ?","Apakah dia memiliki enam kaki ?","Apakah dia cantik ?","Apakah dia menyukai bunga ?","Apakah dia memiliki gigi panjang ?"
 ]
 
 
@@ -95,5 +95,5 @@ daftar_hewan = {
 # Tambah fitur untuk mengajarkan Ai
 # contoh: Di main awal bikin menu : Coba Ai, Ajari Ai
 # di menu ajari, tambah kan menu : masukkan nama hewan, kemudian masukkan ciri2 hewan 
-panjang = len(daftar_pertanyaan)
+panjang = len(daftar_hewan.keys())
 print(panjang) 

@@ -1,13 +1,11 @@
-data = {
-    'a': 10,
-    'b': 25,
-    'c': 5,
-    'd': 35,
-    'e': 20
-}
+import time
 
-max_value = max(data.values())
-result = [key for key, value in data.items() if value == max_value]
-
-print("Nilai integer terbesar adalah:", max_value)
-print("Kunci dengan nilai integer terbesar adalah:", result)
+def loading_animation(duration):
+    start_time = time.time()
+    while time.time() - start_time < duration:
+        for i in range(4):
+            print("Loading" + "." * i)
+            time.sleep(0.5)
+            print("\033[F\033[K", end="")  # Menghapus baris sebelumnya
+        
+loading_animation(3)
