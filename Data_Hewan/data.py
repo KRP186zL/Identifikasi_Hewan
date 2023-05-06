@@ -7,14 +7,14 @@ daftar_pertanyaan= [
     "Apakah dia hidup bersama manusia ?","Apakah dia hewan peliharaan ?", "Apakah dia memiliki belalai ?",
     "Apakah dia suka berada di dinding ?","Apakah dia bertelur ?","Apakah dia melahirkan ?","Apakah dia hewan karnivora ?",
     "Apakah dia hewan omnivora ?","Apakah dia hewan herbivora ?","Apakah dia mudah dilatih ?","Apakah dia hewan predator ?",
-    "Apakah dia memiliki kepala yang panjang ?","Apakah dia hidup di hutan ?","Apakah dia hidup di savana ?",
+    "Apakah dia memiliki leher yang panjang ?","Apakah dia hidup di hutan ?","Apakah dia hidup di savana ?",
     "Apakah dia hewan yang terancam punah ?","Apakah dia memiliki gading ?","Apakah dia memiliki ekor ?",
     "Apakah dia bertubuh panjang ?", "Apakah dia memiliki sisik ?","Apakah dia tidak mempunyai kaki ?",
     "Apakah dia bisa di tunggangi ?","Apakah dia bisa terbang ?","Apakah dia memiliki sayap ?","Apakah dia memiliki kulit yang keras dan bersisik ?",
     "Apakah dia memiliki bulu lebat di sekitar kepala ?","Apakah dia memiliki bisa/racun","Apakah dia memiliki paruh ?",
     "Apakah dia memiliki kantung ?","Apakah dia memiliki delapan kaki ?","Apakah dia memiliki tanduk ?","Apakah dia hidup di perairan dingin ?",
     "Apakah dia hidup berkelompok ?","Apakah dia hidup di dua alam ?","Apakah dia memiliki tangan ?","Apakah dia termasuk primata ?",
-    "Apakah dia hewan yang menghasilkan susu ?","Apakah dia memiliki enam kaki ?","Apakah dia cantik ?"
+    "Apakah dia bisa diminum susunya ? ?","Apakah dia memiliki enam kaki ?","Apakah dia cantik ?"
 ]
 
 
@@ -46,7 +46,7 @@ daftar_hewan = {
 
     "Sapi": [
         "hidup di daratan","hewan mamalia","berkaki empat","berbadan besar","hewan peliharaan","melahirkan","hewan herbivora",
-        "memiliki ekor","memiliki tanduk","hewan yang menghasilkan susu"
+        "memiliki ekor","memiliki tanduk","bisa diminum susunya","bisa di tunggangi"
     ],
 
     "Penguin":[
@@ -85,7 +85,11 @@ daftar_hewan = {
     "Jerapah":["memiliki kepala yang panjang","hidup di savana"],
     "Singa":["hewan buas","memiliki taring","berkaki empat","hidup di savana"],
     "Harimau":["hewan buas","memiliki taring","berkaki empat","hidup di hutan"],
-    "Cheetah":[]
+    "Cheetah":[],
+    "Ikan":[],
+    "Cicak":[],
+    "Burung":[],
+    "Kelelawar":[]
 }
 
 # Tambah fitur untuk mengajarkan Ai

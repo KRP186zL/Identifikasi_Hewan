@@ -9,7 +9,7 @@ prob ={
     "Buaya": 0,
     "Monyet": 0,
     "Komodo": 0,
-    "Rusa": 0,
+    "Ikan": 0,
     "Banteng": 0,
     "Kelinci": 0,
     "Beruang": 0,
@@ -23,5 +23,8 @@ prob ={
     "Jerapah": 0,
     "Singa": 0,
     "Harimau": 0,
-    "Cheetah": 0
+    "Cheetah": 0,
+    "Cicak":0,
+    "Kelelawar":0,
+    "Burung":0,
 }
