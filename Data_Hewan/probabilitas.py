@@ -19,12 +19,11 @@ prob ={
     "Laba-laba": 0,
     "Babi": 0,
     "Ayam": 0,
-    "Orang hutan": 0,
+    "Panda": 0,
     "Jerapah": 0,
     "Singa": 0,
     "Harimau": 0,
-    "Cheetah": 0,
     "Cicak":0,
     "Kelelawar":0,
-    "Burung":0,
+    "Burung":0
 }

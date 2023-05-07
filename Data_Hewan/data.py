@@ -14,7 +14,9 @@ daftar_pertanyaan= [
     "Apakah dia memiliki bulu lebat di sekitar kepala ?","Apakah dia memiliki bisa/racun","Apakah dia memiliki paruh ?",
     "Apakah dia memiliki kantung ?","Apakah dia memiliki delapan kaki ?","Apakah dia memiliki tanduk ?","Apakah dia hidup di perairan dingin ?",
     "Apakah dia hidup berkelompok ?","Apakah dia hidup di dua alam ?","Apakah dia memiliki tangan ?","Apakah dia termasuk primata ?",
-    "Apakah dia bisa diminum susunya ? ?","Apakah dia memiliki enam kaki ?","Apakah dia cantik ?","Apakah dia menyukai bunga ?","Apakah dia memiliki gigi panjang ?"
+    "Apakah dia bisa diminum susunya ?","Apakah dia memiliki enam kaki ?","Apakah dia menyukai bunga ?","Apakah dia memiliki gigi panjang ?",
+    "Apakah dia suka wortel ?","Apakah dia suka bambu ?","Apakah dia berasal dari negara china ?","Apakah dia di sekitar matanya berwarna hitam ?",
+    "Apakah dia memiliki jaring ?","Apakah dia suka madu ?","Apakah dia memiliki jengger di kepala ?","Apakah dia memiliki tulang tajam  di kakinya ?"
 ]
 
 
@@ -81,7 +83,6 @@ daftar_hewan = {
     "Laba-laba":["memiliki empat mata", "berkaki delapan", "tidak bersayap", "berbisa", "hewan karnivora"],
     "Babi":["berkaki empat", "tubuh panjang", "memiliki hidung besar", "mengandung cacing pita", "hewan omnivora"],
     "Ayam":["berkaki dua", "mempunyai dua sayap", "memiliki bulu", "memiliki jengger dikepala", "hewan omnivora"],
-    "Orang hutan":["berbadan besar","memiliki bulu","mamalia","hidup di hutan"],
     "Jerapah":["memiliki kepala yang panjang","hidup di savana"],
     "Singa":["hewan buas","memiliki taring","berkaki empat","hidup di savana"],
     "Harimau":["hewan buas","memiliki taring","berkaki empat","hidup di hutan"],
@@ -95,5 +96,5 @@ daftar_hewan = {
 # Tambah fitur untuk mengajarkan Ai
 # contoh: Di main awal bikin menu : Coba Ai, Ajari Ai
 # di menu ajari, tambah kan menu : masukkan nama hewan, kemudian masukkan ciri2 hewan 
-panjang = len(daftar_hewan.keys())
-print(panjang) 
+panjang = len(daftar_pertanyaan)
+print(panjang)
