@@ -566,8 +566,7 @@ def identifikasi_hewan(ciri_ciri:list)->str:
     if "memiliki tulang tajam  di kakinya" in ciri_ciri:
         chance["Ayam"]+=100
         # return chance
-    print(chance)
-    input()
+
     chance_terbesar = max(chance.values())
     result = [key for key, value in chance.items() if value == chance_terbesar]
     final_result = "".join(result)

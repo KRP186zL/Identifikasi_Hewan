@@ -25,76 +25,102 @@ random.shuffle(daftar_pertanyaan)
 
 daftar_hewan = {
     "Gajah": [
-        "hidup di daratan","hewan mamalia","memiliki bulu","berkaki empat","berbadan besar","memiliki belalai",
-        "melahirkan","hewan herbivora","mudah di latih","hidup di hutan","hidup di savana","hewan yang terancam punah",
-        "memiliki gading","memiliki ekor","bisa ditunggangi"
+        "hidup di daratan","hewan mamalia","memiliki bulu","berkaki empat",
     ],
 
     "Kuda": [
-        "hidup di daratan","hewan mamalia","memiliki bulu","berkaki empat","cepat","hewan peliharaan","melahirkan","hewan herbivora",
-        "hidup di savana","memiliki ekor","bisa di tunggangi","memiliki bulu lebat di kepala"
+        "hidup di daratan","hewan mamalia","memiliki bulu","berkaki empat","cepat",
              
     ],
              
     "Kucing": [
-        "hidup di daratan","hewan mamalia","memiliki bulu","memiliki taring","berkaki empat","kecil","hidup bersama manusia",
-        "hewan peliharaan","melahirkan","hewan karnivora","mudah di latih","memiliki ekor"
+        "hidup di daratan","hewan mamalia","memiliki bulu","memiliki taring","berkaki empat","kecil",
     ],
 
     "Kanguru": [
-        "hidup di daratan","hewan mamalia","memiliki bulu","berbadan besar","berkaki dua","melahirkan","hewan herbivora",
-        "hidup di savana","hidup di hutan","memiliki ekor","memiliki kantung","memiliki tangan"
+        "hidup di daratan","hewan mamalia","memiliki bulu",
     ],
 
     "Sapi": [
-        "hidup di daratan","hewan mamalia","berkaki empat","berbadan besar","hewan peliharaan","melahirkan","hewan herbivora",
-        "memiliki ekor","memiliki tanduk","bisa diminum susunya","bisa di tunggangi"
+        "hidup di daratan","hewan mamalia","memiliki bulu","berkaki empat",
     ],
 
     "Penguin":[
-        "hidup di dua alam","kecil","berkaki dua","bertelur","hewan karnivora","hewan predator","memiliki ekor","memiliki paruh","hidup di perairan dingin","memiliki sayap"
+        "hidup di daratan","memiliki bulu","kecil",
     ],
 
     "Ular":[
-        "hidup di lautan","hidup di daratan","hewan buas","bertelur","hewan karnivora","hewan predator","hidup di hutan","hidup di savana",
-        "memiliki ekor","bertubuh panjang","memiliki sisik","tidak mempunyai kaki","memiliki bisa/racun"
+        "hidup di daratan","hewan buas","hewan nokturnal",
     ],
 
     "Buaya":[
-        "hidup di dua alam","hewan buas","memiliki taring","berkaki empat","cepat","berbadan besar","bertelur","hewan karnivora",
-        "hewan predator","bertubuh panjang","memiliki kulit yang keras dan bersisik"
+        "hidup di daratan","hewan buas","memiliki taring","berkaki empat","cepat",
     ],
 
     "Monyet":[
-        "hidup di daratan","hewan mamalia","memiliki bulu","kecil","berkaki dua","hewan peliharaan","melahirkan","hewan omnivora","mudah di latih",
-        "hidup di hutan","memiliki ekor","termasuk primata","memiliki tangan"
+        "hidup di daratan","hewan mamalia","memiliki bulu","berkaki empat","kecil",
     ],
 
     "Komodo":[
-        "hidup di darat",""
+        "hidup di daratan","hewan buas","memiliki taring","berkaki empat","cepat",
+    ],
+    "Ikan":[
+        "cepat","kecil",
     ],
 
-    "Banteng":["mempunyai tanduk panjang melengkung ke atas", "berkaki empat", "memiliki bulu", "besar", "hewan herbivora"],
-    "Kelinci":["cara jalan yang unik dengan melompat", "berkaki empat" ,"kecil" ,"memiliki bulu" ,"hewan mamalia"],
-    "Beruang":["besar", "mempunyai cakar tajam", "memiliki bulu", "berkaki empat", "hewan karnivora"],
-    "Anjing":["memiliki ekor", "kecil", "berkaki empat", "memiliki bulu", "hewan peliharaan", "hewan omnivora","hidup bersama manusia","pintar","hidup di daratan","melahirkan"],
-    "Katak":["bertubuh langsing", "tekstur kulit halus, basah dan tipis", "berkaki empat", "hidup di dua alam", "karnivora"],
-    "Kupu-kupu":["berkaki enam", "mempunyai sayap dan antena dikepala", "mempunyai belalai seperti sedotan", "hewan herbivora"],
-    "Laba-laba":["memiliki empat mata", "berkaki delapan", "tidak bersayap", "berbisa", "hewan karnivora"],
-    "Babi":["berkaki empat", "tubuh panjang", "memiliki hidung besar", "mengandung cacing pita", "hewan omnivora"],
-    "Ayam":["berkaki dua", "mempunyai dua sayap", "memiliki bulu", "memiliki jengger dikepala", "hewan omnivora"],
-    "Jerapah":["memiliki kepala yang panjang","hidup di savana"],
-    "Singa":["hewan buas","memiliki taring","berkaki empat","hidup di savana"],
-    "Harimau":["hewan buas","memiliki taring","berkaki empat","hidup di hutan"],
-    "Cheetah":[],
-    "Ikan":[],
-    "Cicak":[],
-    "Burung":[],
-    "Kelelawar":[]
+    "Banteng":[
+        "hidup di daratan","hewan buas","hewan mamalia","memiliki bulu","berkaki empat","cepat",
+    ],
+    "Kelinci":[
+        "hidup di daratan","hewan mamalia","memiliki bulu","berkaki empat","cepat","kecil",
+    ],
+    "Beruang":[
+        "hidup di daratan","hewan buas","hewan mamalia","memiliki bulu","memiliki taring","berkaki empat","cepat",
+    ],
+    "Anjing":[
+        "hidup di daratan","hewan mamalia","memiliki bulu","memiliki taring","berkaki empat","cepat",
+    ],
+    "Katak":[
+        "hidup di daratan","hewan amfibi","berkaki empat","cepat","kecil",
+    ],
+    "Kupu-kupu":[
+        "hidup di daratan","kecil",
+    ],
+    "Laba-laba":[
+        "hidup di daratan","memiliki bulu","kecil",
+    ],
+    "Babi":[
+        "hidup di daratan","hewan buas","hewan mamalia","memiliki bulu","memiliki taring","berkaki empat","cepat",
+    ],
+    "Ayam":[
+        "hidup di daratan","memiliki bulu","kecil",
+    ],
+    "Panda":[
+        "hewan mamalia","memiliki bulu","memiliki taring","berkaki empat",
+    ],
+    "Jerapah":[
+        "hidup di daratan","hewan mamalia","memiliki bulu","berkaki empat",
+    ],
+    "Singa":[
+        "hidup di daratan","hewan buas","hewan mamalia","memiliki bulu","memiliki taring","berkaki empat","cepat",
+    ],
+    "Harimau":[
+        "hidup di daratan","hewan buas","hewan mamalia","memiliki bulu","memiliki taring","berkaki empat","cepat",
+    ],
+    "Cicak":[
+        "hidup di daratan","hewan amfibi","berkaki empat","kecil",
+    ],
+    "Kelelawar":[
+        "hidup di daratan","hewan nokturnal","hewan mamalia","memiliki taring","kecil",
+    ],
+    "Burung":[
+        "hidup di daratan","memiliki bulu","kecil",
+    ]
 }
 
 # Tambah fitur untuk mengajarkan Ai
 # contoh: Di main awal bikin menu : Coba Ai, Ajari Ai
 # di menu ajari, tambah kan menu : masukkan nama hewan, kemudian masukkan ciri2 hewan 
-panjang = len(daftar_pertanyaan)
+
+panjang = len(daftar_hewan.keys())
 print(panjang)
