@@ -14,7 +14,7 @@ def pertanyaan_yang_diberikan():
     banyak_pertanyaan = len(copy_pertanyaan)
     global jumlah_pertanyaan,nomor,programs
     jumlah_pertanyaan +=1
-    if (jumlah_pertanyaan <= banyak_pertanyaan): #sebanyak jumlah pertanyaan
+    if (jumlah_pertanyaan <= banyak_pertanyaan):
         nomor+=1
         if jumlah_pertanyaan == banyak_pertanyaan:
             programs = False
@@ -37,11 +37,11 @@ def hasil(final_result:str)->str:
 | - {hewan[5]:<15}- {hewan[4]:<15}- {hewan[3]}{'|':>27}
 | - {hewan[6]:<15}- {hewan[7]:<15}- {hewan[8]}{'|':>28}
 | - {hewan[11]:<15}- {hewan[15]:<15}- {hewan[9]}{'|':>28}
-| - {hewan[12]:<15}- {hewan[13]:<15}- {hewan[14]}{'|':>29}
-| - {hewan[17]:<15}- {hewan[16]:<15}- {hewan[15]}{'|':>25}
+| - {hewan[12]:<15}- {hewan[13]:<15}- {hewan[14]}{'|':>28}
+| - {hewan[17]:<15}- {hewan[16]:<15}- {hewan[15]}{'|':>29}
 | - {hewan[18]:<15}- {hewan[19]:<15}- {hewan[20]}{'|':>29}
 | - {hewan[23]:<15}- {hewan[22]:<15}- {hewan[21]}{'|':>27}
-| - {hewan[24]:<15}- {hewan[25]:<15}- {hewan[26]}{'|':>25}
+| - {hewan[24]:<15}- {hewan[25]:<15}- {hewan[26]}{'|':>28}
 | {'|':>70}
 | {'|':>70}
 | {copy_pertanyaan[-1]:^69}{'|'} 
@@ -73,7 +73,7 @@ def identifikasi_hewan(ciri_ciri:list)->str:
     """Mengidentifikasikan Hewan Berdasarkan Nilai 
     terbanyak yang didapatkan dari ciri-ciri"""
 
-    #Nilai di dapatkan dari 100/banyaknya jumlah hewan yang memiliki ciri tersebut
+    #Nilai di dapatkan dari 100 dibagi banyaknya jumlah hewan yang memiliki ciri tersebut
 
     if "hidup di lautan" in ciri_ciri:
         chance["Penguin"]+=33
@@ -246,10 +246,11 @@ def identifikasi_hewan(ciri_ciri:list)->str:
         chance["Burung"]+=5
     
     if "berkaki dua" in ciri_ciri:
-        chance["Kanguru"]+=25
-        chance["Ayam"]+=25
-        chance["Kelelawar"]+=25
-        chance["Burung"]+=25
+        chance["Kanguru"]+=20
+        chance["Ayam"]+=20
+        chance["Kelelawar"]+=20
+        chance["Burung"]+=20
+        chance["Penguin"]+=20
         
     if "hidup bersama manusia" in ciri_ciri:
         chance["Kucing"]+=50
@@ -383,6 +384,7 @@ def identifikasi_hewan(ciri_ciri:list)->str:
         chance["Burung"]+=6
         chance["Harimau"]+=6
         chance["Kelelawar"]+=6
+        chance["Beruang"]+=6
 
 
     if "hidup di savana" in ciri_ciri:
@@ -563,9 +565,8 @@ def identifikasi_hewan(ciri_ciri:list)->str:
     if "memiliki jengger di kepala" in ciri_ciri:
         chance["Ayam"]+=100
 
-    if "memiliki tulang tajam  di kakinya" in ciri_ciri:
+    if "memiliki tulang tajam di kakinya" in ciri_ciri:
         chance["Ayam"]+=100
-        # return chance
 
     chance_terbesar = max(chance.values())
     result = [key for key, value in chance.items() if value == chance_terbesar]
